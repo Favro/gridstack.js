@@ -45,7 +45,7 @@ var DDResizableHandle = /** @class */ (function () {
             this.el.removeEventListener('touchstart', dd_touch_1.touchstart);
             this.el.removeEventListener('pointerdown', dd_touch_1.pointerdown);
         }
-        this.host.removeChild(this.el);
+        this.el.remove();
         delete this.el;
         delete this.host;
         return this;

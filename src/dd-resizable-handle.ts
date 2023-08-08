@@ -65,7 +65,7 @@ export class DDResizableHandle {
       this.el.removeEventListener('touchstart', touchstart);
       this.el.removeEventListener('pointerdown', pointerdown);
     }
-    this.host.removeChild(this.el);
+    this.el.remove();
     delete this.el;
     delete this.host;
     return this;
